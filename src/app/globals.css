@@ -2,26 +2,176 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: white;
+  color: black;
+}
+/* header */
+.header{
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.leftnav{
+  font-size: 1.1rem;
+  display: flex;
+  gap: 30px;
+}
+/* .centernav{
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: -20px;
+  margin-left: -30px;
+} */
+.rightnav{
+  display: flex;
+  gap: 20px;
+}
+.rightnav img{
+  height: 25px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/*  */
+
+.home{
+  padding: 50px 60px;
+  height: 100vh;
+  display: flex;
+}
+.left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right{
+  width: 50%;
+}
+.right h1{
+  font-size: 4rem;
+}
+.marq{
+ /* border: 4px solid black; */
+ border-radius: 40px;
+ background-color: darkcyan;
+ color: white;
+  display: flex;
+  gap: 10px;
+}
+.marq2{
+  display: flex;
+  gap: 20px;
+}
+.marq2 h1{
+  font-size: 2rem;
+}
+.mask1 {
+  -webkit-mask-image: url(/splash.webp);
+  mask-image: url(/splash.webp);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+.para{
+  margin-top: 30px;
+  font-size: 20px;
+}
+.resume{
+  display: flex;
+  gap: 30px;
+}
+.resume a{
+  margin-top: 20px;
+  width: 22%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.external{
+  color: white;
+}
+.ro{
+  margin-top: -40px;
+}
+.hire{
+  background-color: black;
+  color: white;
+  border-radius: 20%;
+  padding: 10px;
+  margin-left: -135px;
+}
+
+.about{
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h1{
+  font-size: 4rem;
+}
+
+.me{
+  display: flex;
+  margin-top: 50px;
+  padding: 10px 50px;
+}
+.meleft{
+  width: 33%;
+}
+.meleft h1{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.meleft p{
+  margin-top: 20px;
+  word-spacing: 2px;
+}
+.meright{
+  width: 33%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meright h1{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.meImage{
+  width: 34%;
+}
+
+
+.ecl{
+  background: repeating-radial-gradient(rgba(0,0,0,0.4) 2px , white 5px, white 100px);
+}
+.skills{
+  margin-top: 40px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.web{
+  background-color: black;
+  color: white;
+  /* z-index: 10; */
 }
