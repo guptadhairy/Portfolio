@@ -129,6 +129,7 @@ body{
 }
 .meleft{
   width: 33%;
+  padding-right: 20px;
 }
 .meleft h1{
   font-size: 2rem;
@@ -159,12 +160,13 @@ body{
   background: repeating-radial-gradient(rgba(0,0,0,0.4) 2px , white 5px, white 100px);
 }
 .skills{
-  margin-top: 40px;
+  margin-top: 45px;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 .skills h1{
   font-size: 4rem;
@@ -174,4 +176,97 @@ body{
   background-color: black;
   color: white;
   /* z-index: 10; */
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 20vh;
+  padding: 30px 50px;
+}
+.leftfooter ,.centerfooter,.rightfooter{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightfooter{
+  /* display: flex; */
+  gap: 10px;
+}
+.tra{
+  background-color: rgb(9, 74, 96);
+}
+.tran{
+  background-color: rgb(253, 37, 156);
+}
+.trans{
+  background-color: rgb(198, 147, 242);
+}
+
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.primg{
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+}
+.pr_right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pr_right h1{
+  font-size: 4rem;
+  display: flex;
+  align-self: flex-start;
+}
+
+.show{
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+  align-self: flex-start;
+}
+.prButton{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
 }

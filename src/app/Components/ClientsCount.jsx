@@ -5,7 +5,7 @@ const ClientsCount = () => {
     const [count, setCount] = useState(0);
   const [inViewRef, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.5, // Adjust the threshold as needed to control when the counting animation starts.
+    threshold: 0.5, 
   });
   useEffect(() => {
     if (inView) {

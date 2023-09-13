@@ -2,9 +2,11 @@ import React from 'react'
 import Marque from '../Components/Marque'
 import Link from 'next/link'
 import {FiDownload} from 'react-icons/fi'
+import Transition from './Transition'
 const Home = () => {
   return (
     <>
+    <Transition />
     <div className='home'>
       <div className='left'>
         <img className='mask1' src='/gallery.png' alt='profile' />

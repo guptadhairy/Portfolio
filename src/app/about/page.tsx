@@ -6,11 +6,13 @@ import ProjectsCount from '../Components/ProjectsCount';
 import YearsCount from '../Components/YearsCount';
 import ClientsCount from '../Components/ClientsCount';
 import Skills from '../Components/Skills'
+import Transition from '../Components/Transition';
 const page = () => {
   
  
   return (
     <div>
+      <Transition />
       <div className='about'>
         <h1>Passion Fuels</h1>
         <h1><Typewriter
