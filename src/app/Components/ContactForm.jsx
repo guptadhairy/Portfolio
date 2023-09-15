@@ -1,10 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import Transition from '../Components/Transition'
 import axios from 'axios'
-
-const Page = () => {
-  const [name,setName] = useState("");
+const ContactForm = () => {
+    const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [message,setMessage] = useState("");
 
@@ -32,8 +30,6 @@ const Page = () => {
       }
   }
   return (
-    <>
-    <Transition />
     <div className='contact'>
        <div className='lcontact'>
         <div>
@@ -50,8 +46,7 @@ const Page = () => {
         <video className='cvdo' src='/contact.mp4' loop autoPlay muted></video>
        </div>
     </div>
-    </>
   )
 }
 
-export default Page
+export default ContactForm
