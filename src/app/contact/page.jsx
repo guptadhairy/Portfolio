@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Transition from '../Components/Transition'
 import axios from 'axios'
 
-const page = () => {
+const Page = () => {
   const [name,setName] = useState("");
   const [email,setEmail] = useState("");
   const [message,setMessage] = useState("");
@@ -54,4 +54,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
