@@ -1,13 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import {BsGithub} from 'react-icons/bs'
+import Image from 'next/image';
 
 const Project2 = () => {
   return (
     <>
     <div className='home'>
       <div className='left'>
-        <img className='primg' src='/gallery.png' alt='profile' />
+      <Image className="primg" src="/gallery.png" alt="profile" width={500} height={500} />
       </div>
       <div className='pr_right'>
         <h1 > Startup Website </h1>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Marque from '../Components/Marque'
 import Link from 'next/link'
+import Image from 'next/image';
 import {FiDownload} from 'react-icons/fi'
 import Transition from './Transition'
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
     <Transition />
     <div className='home'>
       <div className='left'>
-        <img className='mask1' src='/gallery.png' alt='profile' />
+        <Image className="mask1" src="/gallery.png" alt="profile" width={600} height={600} />
       </div>
       <div className='right'>
         <h1>Turning Vision Into Reality With </h1>

@@ -32,7 +32,7 @@ const page = () => {
         <p>I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
       </div>
       <div className='meImage'>
-        <Image className='meimg' width={400} height={300} src='/gallery.png' alt='profile' />
+        <Image className="meimg" width={400} height={300} src="/gallery.png" alt="profile" />
       </div>
       <div  className='meright'>
         <ClientsCount />
