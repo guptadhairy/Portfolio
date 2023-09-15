@@ -1,14 +1,13 @@
 "use client"
 import React from 'react'
 import Typewriter from 'typewriter-effect';
-
 import ProjectsCount from '../Components/ProjectsCount';
 import YearsCount from '../Components/YearsCount';
 import ClientsCount from '../Components/ClientsCount';
 import Skills from '../Components/Skills'
 import Transition from '../Components/Transition';
+
 const page = () => {
-  
  
   return (
     <div>
@@ -32,7 +31,7 @@ const page = () => {
         <p>I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
       </div>
       <div className='meImage'>
-        <img src='/gallery.png' alt='profile' />
+        <img className='meimg' src='/gallery.png' alt='profile' />
       </div>
       <div  className='meright'>
         <ClientsCount />
