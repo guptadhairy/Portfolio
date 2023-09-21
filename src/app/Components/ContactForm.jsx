@@ -1,46 +1,21 @@
 "use client"
-import React, { useState } from 'react'
-import axios from 'axios'
+import Link from 'next/link'
+import React from 'react'
+
 const ContactForm = () => {
-    const [name,setName] = useState("");
-  const [email,setEmail] = useState("");
-  const [message,setMessage] = useState("");
-
-  const submitHandler = async (e)=>{
-      e.preventDefault();
-
-      setEmail("");
-      setMessage("");
-      setName("");
-
-      try {
-        await axios.post(process.env.NEXT_PUBLIC_BACKEND,{
-          name,email,message
-        },
-        {
-          headers:{
-            "Content-Type": "application/json"
-          },
-          withCredentials: true
-        });
-        console.log("Your message send successfully");
-      } catch (error) {
-        console.log("Some internal error");
-        console.log(error);
-      }
-  }
   return (
     <div className='contact'>
        <div className='lcontact'>
-        <div>
           <h1>Hit Me Up</h1>
-          <form onSubmit={submitHandler} className='cform'>
-            <input value={name} onChange={(e) => setName(e.target.value)} type='text' placeholder='Enter Your Name' />
-            <input value={email} onChange={(e) =>setEmail(e.target.value)} type='email' placeholder='Enter Your email' />
-            <textarea  value={message} onChange={(e) =>setMessage(e.target.value)} placeholder='Enter Message ' />
-            <button type='submit'>SEND</button>
-          </form>
-        </div>
+          <div className='lbox'>
+            <video className='mail' src='/mail.mp4' loop autoPlay muted ></video>
+            <h3>Email: <Link target='_blank' href={'dhairyagupta198@gmail.com'}>dhairyagupta198@gmail.com</Link></h3>
+          </div>
+          <div className='box2'>
+            <video className='mail' src='/call.mp4' loop autoPlay muted></video>
+            <h3>Contact Number: +919997993023</h3>
+          </div>
+
        </div>
        <div className='rcontact'>
         <video className='cvdo' src='/contact.mp4' loop autoPlay muted></video>

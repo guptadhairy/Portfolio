@@ -7,6 +7,7 @@ import Project1 from "../Components/Project1";
 import Project2 from "../Components/Project2";
 import Project3 from "../Components/Project3";
 import Transition from "../Components/Transition";
+import Cursor from "../Components/Cursor";
 
 function ScrollSection() {
   const sectionRef = useRef(null);
@@ -44,13 +45,14 @@ function ScrollSection() {
   return (
     <>
     <Transition />
+    <Cursor />
     <section className="scroll-section-outer">
       <div ref={triggerRef}>
         <div ref={sectionRef} className="scroll-section-inner">
           <div className="scroll-section">
             <div className="project">
             <h3>Imagination </h3>
-            <h3> Trumps </h3>
+            <h3 style={{color: 'purple'}}> Trumps </h3>
             <h3> Knowledge! </h3>
             </div>
           </div>

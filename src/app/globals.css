@@ -26,7 +26,24 @@ body{
 .rightnav img{
   height: 25px;
 }
+.leftnav a {
+  text-decoration: none;
+  position: relative;
 
+}
+.leftnav a:before{
+  content: "";
+  position: absolute;
+  height: 5px;
+  bottom: 40px;
+  width: 0;
+  background-color: darkcyan;
+  border-radius: 3%;
+  transition:  0.3s ease;
+}
+.leftnav a:hover:before{
+  width: 100%;
+}
 /*  */
 
 .home{
@@ -210,7 +227,7 @@ body{
 
 .scroll-section-inner {
   height: 100vh;
-  width: 400vw;
+  width: 500vw;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -239,8 +256,9 @@ body{
 
 
 .primg{
-  width: 400px;
+  width: 500px;
   height: 400px;
+  object-fit: cover;
   border-radius: 20px;
 }
 .pr_right{
@@ -277,10 +295,10 @@ body{
 .lcontact{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 50%;
-  
+  gap: 20px;
 }
 .lcontact h1{
   font-size: 4rem;
@@ -296,7 +314,7 @@ body{
   width: 500px;
   height: 500px;
 }
-.cform{
+/* .cform{
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -316,4 +334,22 @@ body{
   color: white;
   border-radius: 10px;
   width: 120%;
+} */
+
+.lbox , .box2{
+  background-color: black;
+  color: white;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 20px;
+}
+.mail{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100%;
 }
