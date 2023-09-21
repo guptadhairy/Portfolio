@@ -9,7 +9,7 @@ const AboutContent = () => {
         <p>I believe that design is about more than just making things look pretty its about solving problems and creating intuitive enjoyable experiences for users</p>
       </div>
       <div className="meImage">
-          <Image className="meimg" width={400} height={300} src="/gallery.png" alt="profile" />
+          <Image className="meimg" width={400} height={300} src="/prof3.jpg" alt="profile" />
         </div>
     </div>
   )

@@ -8,11 +8,11 @@ const Project1 = () => {
     <>
     <div className='home'>
       <div className='left'>
-        <Image className="primg" src="/temple1.png" alt="profile" width={500} height={500} />
+        <video className="shiva" src="/shivVdo.mp4" autoPlay loop muted></video>
       </div>
       <div className='pr_right'>
         <h1 >Temple Web-App </h1>
-        <p className='para'>As a skilled full-stack developer. I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my expertise in React.js, Next.js and web development.</p>
+        <p className='para'>This is a Temple Web-App . It was made on React. The functionality of this web-app is that you can browse recorded videos of Aarti online . You can donate online and also you can contact to the pandit ji of the temple</p>
         <div className='show'>
         <Link className='prButton' target='_blank' href={'https://temple-second-testing.vercel.app/'}>Visit Project </Link>
         <Link href={'https://github.com/guptadhairy/Temple'} target='_blank'><BsGithub size={'40px'} /></Link>

@@ -8,14 +8,14 @@ const Project2 = () => {
     <>
     <div className='home'>
       <div className='left'>
-      <Image className="primg" src="/gallery.png" alt="profile" width={500} height={500} />
+      <video src="/bit.mp4" loop autoPlay muted></video>
       </div>
       <div className='pr_right'>
-        <h1 > Startup Website </h1>
-        <p className='para'>As a skilled full-stack developer. I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my expertise in React.js, Next.js and web development.</p>
+        <h1 > Crypto Web-App </h1>
+        <p className='para'>This is a Crypto-Currency web-app. This app was made on React and also i have used API in this web-app for fetching the real time data of any CryptoCurrency present in the market. In this app you came to know about all the COIN Exchanges app from where you can trade also.</p>
         <div className='show'>
-        <Link className='prButton' target='_blank' href={'/about'}>Visit Project </Link>
-        <Link href={'/contact'}><BsGithub size={'40px'} /></Link>
+        <Link className='prButton' target='_blank' href={'https://coinstrader.vercel.app'}>Visit Project </Link>
+        
         </div>
       </div>
     </div>

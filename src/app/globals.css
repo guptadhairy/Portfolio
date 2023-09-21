@@ -47,7 +47,7 @@ body{
 /*  */
 
 .home{
-  padding: 50px 60px;
+  /* padding: 50px 40px; */
   height: 100vh;
   display: flex;
 }
@@ -167,7 +167,7 @@ body{
 }
 .meimg{
   border-radius: 20px;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
 .ecl{
@@ -352,4 +352,18 @@ body{
   height: 60px;
   object-fit: cover;
   border-radius: 100%;
+}
+.profile{
+  border-radius: 100%;
+  animation: photoanimation 1.2s infinite ease-in-out alternate;
+}
+@keyframes photoanimation{
+  to{
+      transform: translateY(-15px);
+  }
+}
+.shiva{
+  width: 600px;
+  /* height: 500px; */
+  border-radius: 20px;
 }
