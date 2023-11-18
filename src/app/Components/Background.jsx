@@ -33,7 +33,7 @@ const Background = () => {
                     composite: "destination-out",
                     cover: {
                       color: {
-                        value: "#000"
+                        value: "#000000"
                       },
                       opacity: 0.4
                     },
@@ -65,14 +65,14 @@ const Background = () => {
                         enable: false,
                         mode: "trail",
                         parallax: {
-                          enable: false,
+                          enable: true,
                           force: 2,
                           smooth: 10
                         }
                       },
                       resize: {
                         delay: 0.5,
-                        enable: true
+                        enable: false
                       }
                     },
                     modes: {

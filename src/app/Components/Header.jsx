@@ -12,10 +12,6 @@ const Header = () => {
         <Link href={'/contact'}>Contact</Link>
       </div>
       <div className='centernav'>
-      <div className=' w-28 h-auto flex items-center justify-center relative ro'>
-    <Image src="/CircularText.svg" alt="v" width={300} height={40} className="animate-spin-slow" />
-    </div>
-        
       </div>
       <div className='rightnav'>
         <a href={'https://www.linkedin.com/in/dhairya-gupta-2b071a223/'} target='_blank'><Image src="/linkedin.svg" alt="linkedIn" width={50} height={40} /></a>

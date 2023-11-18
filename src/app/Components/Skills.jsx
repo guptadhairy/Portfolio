@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
-
+import Marque3 from './Marque3'
+import Marque2 from './Marque2'
 const Skill = ({name, x, y}) =>{
     return(
         <motion.div className=' web flex items-center justify-center rounded-full font-semibold  py-3 px-6 shadow-dark cursor-pointer absolute' whileHover={{scale:1.05}}
@@ -14,6 +15,7 @@ const Skill = ({name, x, y}) =>{
 
 const Skills = () => {
   return (
+    <>
     <div className='skills'>
       <h1>SKILLS</h1>
       <div className='ecl w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight'>
@@ -32,6 +34,13 @@ const Skills = () => {
         <Skill name={'Canva'} x={'21vw'} y={'8vw'} />
       </div>
     </div>
+    <div className='skills2'>
+      <h1> SKILLS</h1>
+      <Marque2 />
+      <Marque3 />
+      
+    </div>
+    </>
   )
 }
 

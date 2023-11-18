@@ -6,8 +6,8 @@ import Image from 'next/image';
 const Project2 = () => {
   return (
     <>
-    <div className='home'>
-      <div className='left'>
+    <div className='home1'>
+      <div className='left1'>
       <video src="/bit.mp4" loop autoPlay muted></video>
       </div>
       <div className='pr_right'>
