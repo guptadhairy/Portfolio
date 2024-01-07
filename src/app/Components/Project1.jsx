@@ -12,7 +12,7 @@ const Project1 = () => {
       </div>
       <div className='pr_right'>
         <h1 >Learnr </h1>
-        <p className='para'>I have successfully developed a MERN-Stack web application that facilitates student enrollment in courses, providing a seamless platform for purchasing and learning. Additionally, the application includes an administrative dashboard, empowering administrators to create new courses, manage existing ones, and access comprehensive financial and statistical data, including profit analytics.</p>
+        <p className='para'>I've developed a MERN-stack web app that streamlines student enrollment in courses, offering a smooth platform for purchasing and learning. The app features an admin dashboard for creating and managing courses, along with access to detailed financial and statistical data, including profit analytics.</p>
         <div className='show'>
         <Link className='prButton' target='_blank' href={'https://learnr-in.vercel.app/'}>Visit Project </Link>
         <Link href={'https://github.com/guptadhairy/Learnr'} target='_blank'><BsGithub size={'40px'} /></Link>

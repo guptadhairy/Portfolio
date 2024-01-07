@@ -372,9 +372,16 @@ body{
 }
 @media only screen and (max-width: 768px){
   .project h3{
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 }
+
+@media only screen and (min-width: 769px) {
+  .scroll-section-inner {
+    flex-direction: row; /* Reset to row layout for laptops and larger screens */
+  }
+}
+
 .home1{
   /* padding: 50px 40px; */
   height: 100vh;
